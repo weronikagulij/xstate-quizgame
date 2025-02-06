@@ -1,0 +1,7 @@
+@let quizState = quizState$ | async;
+
+{{ quizState?.description }}
+
+@for (answer of quizState?.nextStates; track answer.description) {
+  <button (click)="answerClick(answer.eventKey)">{{ answer.description }}</button>
+}
