@@ -1,13 +1,10 @@
-import { Component, effect, OnInit, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
 import { QuizStateMachineService } from './quiz-state-machine/quiz-state-machine.service';
-import { BehaviorSubject } from 'rxjs';
-import { QuizState } from './quiz-state-machine/quiz-state.model';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule],
+  imports: [CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

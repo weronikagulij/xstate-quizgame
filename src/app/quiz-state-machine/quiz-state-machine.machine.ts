@@ -2,7 +2,7 @@ import { createMachine } from "xstate";
 
 export const quizStateMachine = createMachine({
   context: {},
-  id: "Metaphor: Refantazio Archetype Quizgame",
+  id: "Metaphor: ReFantazio Archetype Quizgame",
   initial: "satisfaction",
   states: {
     satisfaction: {
